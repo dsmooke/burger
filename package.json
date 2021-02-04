@@ -1,0 +1,19 @@
+{
+  "name": "burger",
+  "version": "1.0.0",
+  "description": "hw13 Burger logger with MySQL, Node, Express, Handlebars and a homemade ORM. App follows MVC design pattern.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dsmooke/burger.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dsmooke/burger/issues"
+  },
+  "homepage": "https://github.com/dsmooke/burger#readme"
+}
