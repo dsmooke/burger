@@ -13,3 +13,5 @@ connection.connect(function (err) {
   if (err) throw err;
   console.log(`Connected to Database at port: ${PORT}`);
 });
+
+module.exports = connection;
