@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/dsmooke/burger/issues"
   },
-  "homepage": "https://github.com/dsmooke/burger#readme"
+  "homepage": "https://github.com/dsmooke/burger#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
