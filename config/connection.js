@@ -7,6 +7,7 @@ const connection = mysql.createConnection({
   user: "root",
   port: PORT,
   password: "password",
+  database: "burger_db",
 });
 
 connection.connect(function (err) {
