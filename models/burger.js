@@ -8,7 +8,9 @@ const burger = {
         ORM.all('burger', (res) => callback(res));
     },
 
-    insertOne()
+    insertOne(cols, vals, callback) {
+        ORM.insertOne('burger', cols, vals, (res) => callback(res));
+    },
 
     updateOne()
 }
