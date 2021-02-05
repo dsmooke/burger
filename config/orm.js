@@ -85,6 +85,6 @@ const orm = {
   },
 };
 
-module.exports = ORM;
+module.exports = orm;
 
 //(referenced unit13-activity17-orm.js)
