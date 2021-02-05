@@ -1,5 +1,35 @@
 <h1>{{ burger }}</h1>
 <p>{{ devoured }}</p>
 
-<button type="submit">Devour It!</button>
-<form ><input type="submit" value="Send Request"></form>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12 text-center" id="top-bar">
+            <img src="/imgs/burger-vector-transparent.png" alt="burger-img">
+            <h1>Eat-Da-Burger!</h1>
+        </div>
+        <div class="col-md-6 text-center"></div>
+        {{!-- <ul class="list-group">
+            <li class="list-group-item">
+                {{ #each burger }}
+                {{/each}}
+            </li>
+                <button type="submit">Devour It!</button>
+        </ul> --}}
+        <div class="col-md-6 text-center"></div>
+    </div>
+</div>
+<div class="container">
+    <div="row">
+        <div class="col-md-12 text-center center_section">
+            <form action="/burgers/create" method="POST"></form>
+            <input class="form-control form-control-lg" type="text" placeholder="ex. Cheeseburger" />
+            <p>Enter a burger you want to eat then click the "Submit" button.</p><a class="btn btn-primary btn-lg active" href="#!">Submit</a>
+        </div>
+    </div>
+</div>
+             
+            
+        
+
+         
