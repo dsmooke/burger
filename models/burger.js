@@ -6,7 +6,7 @@ const ORM = require("../config/orm.js");
 
 const burger = {
   selectAll(callback) {
-    ORM.all("burger", (res) => callback(res));
+    ORM.selectAll("burger", (res) => callback(res));
   },
 
   insertOne(cols, vals, callback) {
