@@ -1,9 +1,13 @@
 const express = require("express");
 const exphbs = require("express-handlebars");
 
+// process.env.PORT lets the port be set by Heroku
+const PORT = process.env.PORT || 3360;
+
 const app = express();
 
-const PORT = process.env.PORT || 3360;
+// Serve static content for the app from the "public" directory in the application directory
+app.use(express.static("public"));
 
 app.engine("handlebars", exphbs({ defaultLayout: "main" }));
 app.set("view engine", "handlebars");
@@ -13,4 +17,6 @@ app.set("view engine", "handlebars");
 // Routes
 
 // Listener
-app.listen(3360);
+app.listen(PORT, () =>
+  console.log(`Server listening on: http://localhost:${PORT}`)
+);
