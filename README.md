@@ -4,7 +4,7 @@
 
 "Eat-Da-Burger" is a restaurant app that lets users input the names of burgers they'd like to eat. Each burger name that is submitted will be stored in a database, regardless of whether or not the user clicks the `Devour it!` button.
 
-View dployed app [here](heroku link).
+View dployed app [here](https://royale-with-cheese.herokuapp.com/).
 
 ### Technologies Used
 
