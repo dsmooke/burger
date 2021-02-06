@@ -1,4 +1,4 @@
-const connection = require("../config/connection.js");
+// const connection = require("../config/connection.js");
 const ORM = require("../config/orm.js");
 // Import the ORM to create functions that will interact with the database
 
