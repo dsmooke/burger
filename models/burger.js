@@ -6,15 +6,15 @@ const ORM = require("../config/orm.js");
 
 const burger = {
   selectAll(callback) {
-    ORM.selectAll("burger", (res) => callback(res));
+    ORM.selectAll("burgers", (res) => callback(res));
   },
 
   insertOne(cols, vals, callback) {
-    ORM.insertOne("burger", cols, vals, (res) => callback(res));
+    ORM.insertOne("burgers", cols, vals, (res) => callback(res));
   },
 
   updateOne(objColVals, condition, callback) {
-    ORM.updateOne("burger", objColVals, condition, (res) => callback(res));
+    ORM.updateOne("burgers", objColVals, condition, (res) => callback(res));
   },
 };
 
