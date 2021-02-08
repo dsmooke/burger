@@ -1,5 +1,8 @@
 body {
-  background-color: rgb(87, 62, 16);
+  background-image: url("/assets/imgs/picnictable1.jpg");
+  height: 1010px;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 h1 {
