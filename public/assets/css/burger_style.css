@@ -15,9 +15,11 @@ h1 {
   border: transparent;
   font-variant: small-caps;
   font-family: "palatino";
-  font-size: 20px;
+  font-size: 24px;
   font-weight: bold;
-  text-shadow: 0px 1px 1px #ebe7e7;
+  /* text-shadow: 0px 1px 1px #ebe7e7; */
+  /* margin-bottom: 20px; */
+  padding-top: 50px;
 }
 p {
   color: white;
@@ -28,6 +30,16 @@ img {
   margin-top: 30px;
 }
 
+form {
+  margin-top: 170px;
+}
+
+#form-dir {
+  color: black;
+  font-weight: bold;
+  font-family: "palatino";
+  margin-top: 10px;
+}
 /*Extra small devices (portrait phones, less than 576px)*/
 
 /* // Small devices (landscape phones, 576px and up)
