@@ -5,22 +5,23 @@
             <img src="/assets/imgs/burger-demo.png" alt="burger-img">
             <h1>Eat-Da-Burger!</h1>
         </div>
-        {{!-- <div class="col-md-6 text-center">
-            {{#each burger}}
+        <div class="col-md-2 text-left">
+            {{!-- {{#each burger}}
 
                 <p>{{burger_name}}</p>
-            {{/each}}
+            {{/each}} --}}
 
-        </div> --}}
-        <ul class="list-group">
+        
+        <ul class="list-group" >
         {{#each burger }} 
-            <li class="list-group-item">
+            <li class="list-group-item col-md d-inline-block" id="burgers-added">
             
-            {{burger_name}} <button class="devour-burger btn btn-success btn-md" data-id="{{id}}">Devour It!</button>
+            {{burger_name}} 
+            <button class="devour-burger btn btn-success btn-md" data-id="{{id}}">Devour It!</button>
             </li>
         </ul>
         {{/each}}
-
+</div>
         <div class="col-md-6 text-center"></div>
     </div>
 </div>
@@ -29,7 +30,7 @@
         <div class="col-md-12 text-center center_section">
             <form action="/burgers/create" method="POST"></form>
             <input class="form-control form-control-lg" type="text" placeholder="ex. Cheeseburger" />
-            <p>Enter a burger you want to eat then click the "Submit" button.</p><a class="btn btn-primary btn-lg active">Submit</a>
+            <p id="form-dir">Enter a burger you want to eat then click the "Submit" button.</p><a class="btn btn-primary btn-lg active">Submit</a>
         </div>
     </div>
 </div>
