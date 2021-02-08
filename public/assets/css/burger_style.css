@@ -9,6 +9,10 @@ h1 {
 p {
   color: white;
 }
+img {
+  height: 200px;
+  width: auto;
+}
 
 /*Extra small devices (portrait phones, less than 576px)*/
 
