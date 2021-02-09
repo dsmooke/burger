@@ -17,7 +17,7 @@
             <li class="list-group-item col-md d-inline-block" id="burgers-added">
             
             {{burger_name}} 
-            <button class="devour-burger btn btn-success btn-md" data-id="{{id}}">Devour It!</button>
+            <button class="devour-burger btn btn-success btn-md" data-id="{{id}}" data-devoured="{{devoured}}"> {{#if devoured}}Yum!{{else}}Devour It!{{/if}}</button>
             </li>
         </ul>
         {{/each}}
@@ -28,9 +28,10 @@
 <div class="container">
     <div="row">
         <div class="col-md-12 text-center center_section">
-            <form action="/burgers/create" method="POST"></form>
-            <input class="form-control form-control-lg" type="text" placeholder="ex. Cheeseburger" />
+            <form class="create-form" action="/burgers/create" method="POST">
+            <input class="form-control form-control-lg" id="burg" type="text" placeholder="ex. Cheeseburger" />
             <p id="form-dir">Enter a burger you want to eat then click the "Submit" button.</p><a class="btn btn-primary btn-lg active">Submit</a>
+            </form>
         </div>
     </div>
 </div>
