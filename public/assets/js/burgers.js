@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
   }
 
   // UPDATE
-  const changeDevouredBtns = document.querySelectorAll(".eat-burger");
+  const changeDevouredBtns = document.querySelectorAll(".change-devoured");
 
   // Set up the event listener for the create button
   if (changeDevouredBtns) {
@@ -52,28 +52,29 @@ document.addEventListener("DOMContentLoaded", (event) => {
       // Grabs the value of the textarea that goes by the name, "quote"
       const newBurger = {
         name: document.getElementById("burg").value.trim(),
-        devoured: document.getElementById("devoured"),
-        checked,
+        devoured: document.getElementById("devoured").checked,
       };
 
-      // Send POST request to create a new quote
-      fetch("/api/burger", {
-        method: "POST",
-        headers: {
-          Accept: "application/json",
-          "Content-Type": "application/json",
-        },
+      if (newBurger.name.length > 0) {
+        // Send POST request to create a new quote
+        fetch("/api/burger", {
+          method: "POST",
+          headers: {
+            Accept: "application/json",
+            "Content-Type": "application/json",
+          },
 
-        // make sure to serialize the JSON body
-        body: JSON.stringify(newBurger),
-      }).then(() => {
-        // Empty the form
-        document.getElementById("burg").value = "";
+          // make sure to serialize the JSON body
+          body: JSON.stringify(newBurger),
+        }).then(() => {
+          // Empty the form
+          document.getElementById("burg").value = "";
 
-        // Reload the page so the user can see the new quote
-        console.log("Created a new burger!");
-        location.reload();
-      });
+          // Reload the page so the user can see the new quote
+          console.log("Created a new burger!");
+          location.reload();
+        });
+      }
     });
   }
 
