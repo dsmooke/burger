@@ -222,7 +222,9 @@ Because the app has a backend, Heroku will be used for hosting. Heroku is free, 
 
 ## Bugs
 
-In the process of refactoring the CatsApp the app broke and the buttons don't respond. Needs to be reworked tbd. 2/9/2021
+In the process of refactoring the CatsApp the app broke and the buttons don't respond. Added credit card info for verification.
+
+Needs to be reworked tbd. 2/9/2021
 
 ## License
 
