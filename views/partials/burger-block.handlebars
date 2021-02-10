@@ -1,0 +1,16 @@
+<li class="list-group-item col-md d-inline-block text-center" id="burgers-added">
+	{{burger}}
+
+	<button class="devour-burger btn btn-success btn-md" data-id="{{id}}" data-newdevoured="{{devoured}}">
+		{{#if devoured}}Yum!{{else}}Dig in!{{/if}}
+	</button>
+
+	<button class="delete-burger btn btn-danger btn-md data-id="{{this.id}}">Take2Go!</button>
+</li>
+
+ {{!-- <li class="list-group-item col-md d-inline-block text-center" id="burgers-added">
+        {{burger_name}} 
+        <button class="devour-burger btn btn-success btn-md" 
+        data-id="{{id}}" 
+        data-devoured="{{devoured}}"> {{#unless devoured}}Yum!{{else}}Devour It!{{/unless}}</button>
+    </li> --}}
