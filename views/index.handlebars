@@ -6,47 +6,75 @@
             <h1>Eat-Da-Burger!</h1>
     </div>
 
+<!--Ordered Burgers Column-->
 <div class="col-md-6 text-left">
-
 <h4 class="text-center">Ordered</h4>
   <ul class="list-group text-center">
-    {{#each burger }} 
-    <li class="list-group-item col-md d-inline-block text-center" id="burgers-added">
-        {{burger_name}} 
-        <button class="devour-burger btn btn-success btn-md" data-id="{{id}}" data-devoured="{{devoured}}"> {{#if devoured}}Yum!{{else}}Devour It!{{/if}}</button>
-    </li>
-  </ul>
+    {{#each burger}} 
+   {{#unless devoured}}
+    {{burger devoured=true}}
+    {{/unless}}
+  
     {{/each}}
+    </ul>
 </div>
 
-
-<div class="col-md-6 text-right">
+<!--Devoured Burgers Column-->
+<div class="col-md-6 text-right"> 
   <h4 class="text-center">Devoured</h4>
   <ul class="list-group text-center">
     {{#each burger }} 
-    <li class="list-group-item col-md d-inline-block text-center" id="burgers-added">
+    {{#if devoured}}
+    {{burger devoured=false}}
+    {{/if}}
+    {{!-- <li class="list-group-item col-md d-inline-block text-center" id="burgers-added">
         {{burger_name}} 
         <button class="devour-burger btn btn-success btn-md" data-id="{{id}}" data-devoured="{{devoured}}"> {{#if devoured}}Yum!{{else}}Devour It!{{/if}}</button>
-    </li>
-  </ul>
+    </li> --}}
+  
     {{/each}}
+    </ul>
 </div>
 
-        {{!-- <div class="col-md-6 text-center">Test</div> --}}
   </div> <!--row-->
 
 </div>
 
-<div class="container">
-    <div="row">
-        <div class="col-md-12 text-center center_section">
-            <form class="create-form" action="/burgers/create" method="POST">
-            <input class="form-control form-control-lg" id="burg" type="text" placeholder="ex. Cheeseburger" />
-            <p id="form-dir">Enter a burger you want to eat then click the "Submit" button.</p><a class="btn btn-primary btn-lg active">Submit</a>
-            </form>
-        </div>
+<!--Add a Burger Form Submission-->
+<form id="create-form">
+    <div class="form-group">
+        <label for="burg">Burger Name:</label>
+        <input type="text" id="burger" name="name">
     </div>
-</div>
+    <div class="form-group">
+        <label for="devoured">Devoured?</label>
+        <input type="radio" name="devoured" value="1" id="devoured" checked> Devoured<br>
+        <input type="radio" name="devoured" value="0" id="notDevoured"> Not Devoured
+    </div>
+    <div class="modal-footer">
+        <button type="submit" class="button">Add</button>
+        <button type="button" class="button" data-dismiss="modal">Close</button>
+    </div>
+</form>
+
+
+
+
+{{!-- 
+<div class="container">
+  <div="row">
+    <div class="col-md-12 text-center center_section">
+
+        <form class="create-form" action="/api/burgers" method="POST">
+
+            <input class="form-control form-control-lg" name="burg" id="burg" value="0" type="text" placeholder="ex. Cheeseburger"/>
+
+            <p id="form-dir">Enter a burger you want to eat then click the "Submit" button.</p><a class="btn btn-primary btn-lg active">Submit</a>
+        </form>
+
+    </div>
+  </div>
+</div> --}}
              
             
         
