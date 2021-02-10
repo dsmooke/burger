@@ -6,6 +6,8 @@
 
 View dployed app [here](https://royale-with-cheese.herokuapp.com/).
 
+![burger-demo](public/assets/imgs/final-burger-demo.png)
+
 ### Technologies Used
 
 - Node
@@ -28,6 +30,7 @@ View dployed app [here](https://royale-with-cheese.herokuapp.com/).
   - [View Setup](#view-setup)
   - [Directory Structure](#directory-structure)
 - [Developer](#developer)
+- [Bugs](#bugs)
 - [License](#license)
 
 ## Goals
@@ -216,6 +219,10 @@ All the recommended files and directories from the steps above should look like 
 [Watch this video for an example of how the app should work](https://www.youtube.com/watch?v=msvdn95x9OM&feature=youtu.be).
 
 Because the app has a backend, Heroku will be used for hosting. Heroku is free, but it will request credit card info if you have more than 5 applications at a time or are adding a database. See [Heroku's Account Verification Information](https://devcenter.heroku.com/articles/account-verification) for more details.
+
+## Bugs
+
+In the process of refactoring the CatsApp the app broke and the buttons don't respond. Needs to be reworked tbd. 2/9/2021
 
 ## License
 
