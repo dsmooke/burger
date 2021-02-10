@@ -5,18 +5,18 @@ document.addEventListener("DOMContentLoaded", (event) => {
   }
 
   // UPDATE
-  const devourBtn = document.querySelectorAll(".devour-burger");
+  const changeDevouredBtns = document.querySelectorAll(".eat-burger");
 
   // Set up the event listener for the create button
-  if (devourBtn) {
-    devourBtn.forEach((button) => {
+  if (changeDevouredBtns) {
+    changeDevouredBtns.forEach((button) => {
       button.addEventListener("click", (e) => {
         // Grabs the id of the element that goes by the name, "id"
         const id = e.target.getAttribute("data-id");
-        const wasDevoured = e.target.getAttribute("data-devoured");
+        const newDevoured = e.target.getAttribute("data-newdevoured");
 
-        const wasDevouredState = {
-          devoured: wasDevoured,
+        const newDevouredState = {
+          devoured: newDevoured,
         };
 
         fetch(`/api/burger/${id}`, {
@@ -27,12 +27,12 @@ document.addEventListener("DOMContentLoaded", (event) => {
           },
 
           // make sure to serialize the JSON body
-          body: JSON.stringify(wasDevouredState),
+          body: JSON.stringify(newDevouredState),
         }).then((response) => {
           // Check that the response is all good
           // Reload the page so the user can see the new quote
           if (response.ok) {
-            console.log(`changed burger to: ${wasDevoured}`);
+            console.log(`changed burger to: ${newDevoured}`);
             location.reload("/");
           } else {
             alert("something went wrong!");
@@ -43,16 +43,17 @@ document.addEventListener("DOMContentLoaded", (event) => {
   }
 
   // CREATE
-  const submitBurgerBtn = document.getElementById("create-form");
+  const createBurgerBtn = document.getElementById("create-form");
 
-  if (submitBurgerBtn) {
-    submitBurgerBtn.addEventListener("submit", (e) => {
+  if (createBurgerBtn) {
+    createBurgerBtn.addEventListener("submit", (e) => {
       e.preventDefault();
 
       // Grabs the value of the textarea that goes by the name, "quote"
       const newBurger = {
         name: document.getElementById("burg").value.trim(),
-        devoured: document.getElementById("devoured").checked,
+        devoured: document.getElementById("devoured"),
+        checked,
       };
 
       // Send POST request to create a new quote
@@ -77,10 +78,10 @@ document.addEventListener("DOMContentLoaded", (event) => {
   }
 
   // DELETE
-  const deleteCatBtns = document.querySelectorAll(".delete-cat");
+  const deleteBurgerBtns = document.querySelectorAll(".delete-burger");
 
   // Set up the event listeners for each delete button
-  deleteCatBtns.forEach((button) => {
+  deleteBurgerBtns.forEach((button) => {
     button.addEventListener("click", (e) => {
       const id = e.target.getAttribute("data-id");
 
@@ -89,7 +90,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
         method: "DELETE",
       }).then((res) => {
         console.log(res);
-        console.log(`Deleted cat: ${id}`);
+        console.log(`Deleted burger: ${id}`);
 
         // Reload the page
         location.reload();
