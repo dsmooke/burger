@@ -2,6 +2,8 @@
 
 ## Description
 
+This is the thirteenth assignment from the UConn Coding Boot Camp curriculum. We have covered the following topics thus far: Git, Terminal, GitHub, GitHub Pages, Web Accessibility, HTML, CSS, JavaScript, jQuery, Bootstrap, DOM Traversal, Web APIs, Third-Party APIs, Server-Side APIs, Node.js, Inquirer.js, Express.js, and MySQL. This week we covered more MySQL, MVC, Handlebars.js, and ORM.
+
 "Eat-Da-Burger" is a restaurant app that lets users input the names of burgers they'd like to eat. Each burger name that is submitted will be stored in a database, regardless of whether or not the user clicks the `Devour it!` button.
 
 View dployed app [here](https://royale-with-cheese.herokuapp.com/).
@@ -19,6 +21,7 @@ View dployed app [here](https://royale-with-cheese.herokuapp.com/).
 ## Table of Contents
 
 - [Goals](#goals)
+- [Definitions](#definitions)
 - [User Story](#user-story)
 - [Acceptance Criteria](#acceptance-criteria)
 - [Installation](#installation)
@@ -41,6 +44,41 @@ View dployed app [here](https://royale-with-cheese.herokuapp.com/).
 4. When the user clicks the `Devour it!` button, the burger will move to the right side of the page.
 5. The app will store every burger in a database, whether devoured or not.
 6. Host the app on Heroku
+
+## Definitions
+
+The goals and description can be better understood with the following definitions:
+
+**database**
+: a collection of data stored electronically.
+
+**DBMS**
+: the database management system (i.e. MySQL).
+
+**SQL database**
+: Structured Query Language.
+
+**MySQL**
+:- the most popular Structured Query Language (SQL) relational database,
+
+**MySQL Shell**
+: an advanced client and code editor for MySQL. Provides scripting capabilities for JavaScript and includes APIs for working with MySQL.
+
+**relational database**
+: stores and finds data based on its relationship to other data in the database. Relational databases are tabular, meaning that data is stored in tables composed of rows and columns, much like a spreadsheet.
+
+**(MVC)**
+: Model-View-Controller design pattern framework.
+
+**Handlebars.js**
+:template engine.
+
+**(ORM)**
+: Object Relational-Mapping used to create resuable methods for querying a database.
+
+**CRUD**
+: functions that Create Render Update Delete.
+
 
 ## User Story
 
@@ -232,4 +270,4 @@ Needs to be reworked tbd. 2/9/2021
 
 ---
 
-© 2020 Trilogy Education Services, LLC, a 2U, Inc. brand. Confidential and Proprietary. All Rights Reserved.
+© 2021 Trilogy Education Services, LLC, a 2U, Inc. brand. Confidential and Proprietary. All Rights Reserved.
