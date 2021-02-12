@@ -1,0 +1,13 @@
+
+DROP DATABASE IF EXISTS h448d5jef8ju0va4;
+
+CREATE DATABASE h448d5jef8ju0va4;
+
+USE h448d5jef8ju0va4;
+
+CREATE TABLE burgers (
+    id INT NOT NULL AUTO_INCREMENT,
+    burger_name VARCHAR(30) NOT NULL,
+    devoured BOOLEAN,
+    PRIMARY KEY(id)
+);
