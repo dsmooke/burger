@@ -1,10 +1,14 @@
 # Eat-Da Burger
 
+<span align="left">
+
+<a href="https://img.shields.io/badge/License-MIT-brightgreen?style=plastic"><img alt="M.I.T. License use" src="https://img.shields.io/badge/License-MIT-brightgreen?style=plastic"/></a>
+
+ </span>
+ 
 ## Description
 
-This is the thirteenth assignment from the UConn Coding Boot Camp curriculum. We have covered the following topics thus far: Git, Terminal, GitHub, GitHub Pages, Web Accessibility, HTML, CSS, JavaScript, jQuery, Bootstrap, DOM Traversal, Web APIs, Third-Party APIs, Server-Side APIs, Node.js, Inquirer.js, Express.js, and MySQL. This week we covered more MySQL, MVC, Handlebars.js, and ORM.
-
-"Eat-Da-Burger" is a restaurant app that lets users input the names of burgers they'd like to eat. Each burger name that is submitted will be stored in a database, regardless of whether or not the user clicks the `Devour it!` button.
+"Eat-Da-Burger" is a restaurant app that lets users input the names of burgers they'd like to eat. Each burger name that is submitted will be stored in a database, regardless of whether or not the user clicks the `Devour it!` button. The application includes more MySQL, MVC, Handlebars.js, and ORM.
 
 View dployed app [here](https://royale-with-cheese.herokuapp.com/).
 
@@ -34,6 +38,7 @@ View dployed app [here](https://royale-with-cheese.herokuapp.com/).
   - [Directory Structure](#directory-structure)
 - [Developer](#developer)
 - [Bugs](#bugs)
+- [Contact](#contact)
 - [License](#license)
 
 ## Goals
@@ -260,9 +265,11 @@ Because the app has a backend, Heroku will be used for hosting. Heroku is free, 
 
 ## Bugs
 
-In the process of refactoring the CatsApp the app broke and the buttons don't respond. Added credit card info for verification.
+** **Update: February 9, 2021** In the process of refactoring the CatsApp the app broke and the buttons don't respond. Added credit card info for verification. Needs to be reworked tbd. **
 
-Needs to be reworked tbd. 2/9/2021
+## Contact
+
+[Dana Smooke]("https://github.com/dsmooke")
 
 ## License
 
